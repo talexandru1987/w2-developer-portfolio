@@ -1,0 +1,147 @@
+body {
+    margin: 0px;
+    background-color: #081c15;
+    font-family: "Dancing Script", cursive;
+    font-family: "Josefin Sans", sans-serif;
+    font-family: "Lato", sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
+    font-family: "Smokum", cursive;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+/*style for the navigation bar*/
+.navigation-bar{
+    display: flex;
+    flex-direction: row;
+    background-color: #004b23;
+}
+
+/*style for the navigation bar profile */
+.navigation-bar-profile{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    border-right: solid 3px #38b000;
+
+}
+
+/*style for the navigation bar profile img*/
+.navigation-bar-profile-img{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.profile-img {
+    width: 100px;
+    height: 100px;
+    
+}
+
+
+/*style for the navigation bar profile name*/
+.navigation-bar-profile-name{
+    display: flex;
+    align-self: center;
+    align-items: center;
+    margin: 10px;
+    height: 30px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+.profile-name {
+    color: #70e000;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    text-shadow:
+      0 0 21px rgb(248, 239, 239),
+      0 0 42px rgb(138, 247, 210),
+      0 0 82px rgb(32, 240, 171),
+      0 0 92px rgb(25, 199, 141),
+      0 0 102px rgb(18, 168, 118),
+      0 0 151px rgb(13, 112, 79);
+  
+}
+
+
+/*style for the navigation bar link elements*/
+.navigation-bar-links{
+    flex-grow: 3;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-link-item {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 3;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.nav-link-item > a {
+    color: #70e000;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px #007200;
+}
+
+.nav-link-item > a:hover{
+    color: #ccff33;
+}
+
+/* code that affects the main content section*/
+.main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 2;
+}
+
+.about-section-title {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 3;
+}
+
+.about-section-content {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+
+
+
+
+/* mobile viewport styles */
+@media screen and (max-width: 576px) {
+
+    /* responsive code for the nav bar*/
+    .navigation-bar {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .navigation-bar-profile{
+        border-bottom: solid 3px #38b000;
+        border-right: 0px;
+    }
+    .navigation-bar-links {
+      flex-direction: column;
+      align-items: center;
+      margin: 10px;
+    }
+
+    .profile-img {
+        width: 70px;
+        height: 70px;
+        
+    }
+    
+  }
