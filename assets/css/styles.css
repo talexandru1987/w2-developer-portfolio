@@ -107,12 +107,14 @@ body {
 .about-section-title{
     
     color: #70e000;
+    text-align: right;
 }
 
 .about-section-content{
     
     flex-wrap: wrap;
     color: #70e000;
+    padding: 5px;
 }
 
 /* code that affects the main content work experience section*/
@@ -125,12 +127,14 @@ body {
 .experience-section-title {
     
     color: #70e000;
+    text-align: right;
 }
 
 .experience-section-content {
     
     flex-wrap: wrap;
     color: #70e000;
+    padding: 5px;
 }
 
 /* code that affects the main content completed projects section*/
@@ -143,12 +147,14 @@ body {
 .completed-projects-section-title {
     
     color: #70e000;
+    text-align: right;
 }
 
 .completed-projects-section-content > ul {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
+    padding: 5px;
 }
 
 .completed-projects-section-content > ul > li {
@@ -165,7 +171,33 @@ body {
 
 .completed-projects-section-content > ul > li:last-child {
     flex-grow: 10;
-  }
+}
+
+/* code that affects the main content contact section*/
+
+
+.contact-section {
+    display: flex;
+    flex-direction: row; 
+}
+
+.contact-section-content {
+    display: flex;
+    flex-direction: row; 
+    padding: 5px;
+}
+
+
+.contact-section-content-logo {
+    flex-grow: 1;
+}
+
+footer {
+    color: #006400;
+    text-align: center;
+}
+
+/* code that affects the main content footer section*/
 
 /* mobile viewport styles */
 @media screen and (max-width: 576px) {
@@ -196,7 +228,11 @@ body {
 
     .about-section {
         display: flex;
-        flex-direction: column; 
+        flex-direction: column;
+    }
+
+    .about-section-title > h1 {
+        text-align: center;
     }
 
     /* responsive code for the main content experience section*/
@@ -206,10 +242,48 @@ body {
         flex-direction: column; 
     }
 
+    .experience-section-title > h2 {
+        text-align: center;
+    }
+
     /* code that affects the main content completed projects content section*/
+    
+    .completed-projects-section {
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .completed-projects-section-title > h3 {
+        text-align: center;
+    }
+    
+    .completed-projects-section-content > ul {
+        padding: 5px;
+    }
 
     .completed-projects-section-content > ul > li {
         height: 80vh;
       }
+    
+
+
+
+      /* code that affects the main content contact section*/
+
+    .contact-section {
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .contact-section-content {
+        display: flex;
+        flex-direction: row; 
+        padding: 5px;
+        align-items: center;
+    }
+
+    .contact-section-title > h4 {
+        text-align: center;
+    }
     
   }
