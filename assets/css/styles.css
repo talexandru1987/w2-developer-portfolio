@@ -98,6 +98,11 @@ body {
     
 }
 
+/* code that affects section title size*/
+h1, h2, h3, h4 {
+    font-size: 20px;
+}
+
 /* code that affects the main content about section*/
 .about-section {
     display: flex;
@@ -108,6 +113,7 @@ body {
     
     color: #70e000;
     text-align: right;
+    
 }
 
 .about-section-content{
@@ -115,6 +121,8 @@ body {
     flex-wrap: wrap;
     color: #70e000;
     padding: 5px;
+    flex-grow: 3;
+    
 }
 
 /* code that affects the main content work experience section*/
@@ -148,8 +156,13 @@ body {
     
     color: #70e000;
     text-align: right;
+    flex-grow:  0.5;
 }
 
+.completed-projects-section-content {
+    width: 80%;
+
+}
 .completed-projects-section-content > ul {
     display: flex;
     flex-wrap: wrap;
@@ -158,7 +171,8 @@ body {
 }
 
 .completed-projects-section-content > ul > li {
-    height: 40vh;
+    height: 20vh;
+    
     flex-grow: 1;
 }
 
@@ -181,26 +195,48 @@ body {
     flex-direction: row; 
 }
 
+.contact-section-title{
+
+   padding: 5px;
+   text-align: right;
+   flex-grow: 0.5;
+}
+
 .contact-section-content {
     display: flex;
     flex-direction: row; 
     padding: 5px;
+    flex-grow: 10;
+
 }
 
 
 .contact-section-content-logo {
     flex-grow: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
 }
+
+
+
+
+/* code that affects the main content footer section*/
 
 footer {
     color: #006400;
     text-align: center;
 }
 
-/* code that affects the main content footer section*/
+
+
+
 
 /* mobile viewport styles */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 900px) {
 
     /* responsive code for the nav bar*/
     .navigation-bar {
@@ -233,6 +269,7 @@ footer {
 
     .about-section-title > h1 {
         text-align: center;
+        
     }
 
     /* responsive code for the main content experience section*/
@@ -280,10 +317,13 @@ footer {
         flex-direction: row; 
         padding: 5px;
         align-items: center;
+        
     }
 
     .contact-section-title > h4 {
         text-align: center;
+        
     }
+ 
     
   }
