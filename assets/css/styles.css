@@ -93,72 +93,49 @@ h2,
 h3,
 h4 {
   font-size: 20px;
-  /* ALEX: Set margin here to so that all headers do not overflow within their boxes */
-  margin: 0;
+  margin: 5px;
 }
 
-/* code that affects the main content about section*/
-.about-section {
+/* code that affects the main content and each section of the main content*/
+ .about-section, 
+ .experience-section, 
+ .completed-projects-section, 
+ .contact-section {
   display: flex;
   flex-direction: row;
 }
 
-.about-section-title {
-  /* ALEX: this will take some of the remaining space */
+/* code that affects each title section of the main content*/
+.about-section-title, 
+.experience-section-title, 
+.completed-projects-section-title, 
+.contact-section-title {
   flex: 1;
   color: #70e000;
   text-align: right;
-  /* ALEX: Added a padding here consistent with the content */
   padding: 10px;
 }
 
-.about-section-content {
-  /* ALEX: this will take 5 times the remaining space */
+/* code that affects content section for about me, experience and contact*/
+.about-section-content, 
+.experience-section-content, 
+.contact-section-content {
   flex: 5;
   flex-wrap: wrap;
   color: #70e000;
   padding: 10px;
 }
 
-/* code that affects the main content work experience section*/
-
-.experience-section {
+/* code that affects only the content of the contact section*/
+.contact-section-content{
   display: flex;
   flex-direction: row;
 }
 
-.experience-section-title {
-  /* ALEX: this will take some of the remaining space */
-  flex: 1;
-  color: #70e000;
-  /* ALEX: Added a padding here consistent with the content */
-  text-align: right;
-  padding: 10px;
-}
-
-.experience-section-content {
-  /* ALEX: this will take 5 times the remaining space */
-  flex: 5;
-  flex-wrap: wrap;
-  color: #70e000;
-  padding: 10px;
-}
-
-/* code that affects the main content completed projects section*/
-
-.completed-projects-section {
-  display: flex;
-  flex-direction: row;
-}
-
-.completed-projects-section-title {
-  color: #70e000;
-  text-align: right;
-  flex-grow: 0.5;
-}
+/* code that affects the main content of completed projects section*/
 
 .completed-projects-section-content {
-  width: 80%;
+  flex: 5;
 }
 .completed-projects-section-content > ul {
   display: flex;
@@ -169,8 +146,8 @@ h4 {
 
 .completed-projects-section-content > ul > li {
   height: 20vh;
-
   flex-grow: 1;
+  border: solid 1px #9ef01a;
 }
 
 .completed-projects-section-content-img {
@@ -185,24 +162,6 @@ h4 {
 }
 
 /* code that affects the main content contact section*/
-
-.contact-section {
-  display: flex;
-  flex-direction: row;
-}
-
-.contact-section-title {
-  padding: 5px;
-  text-align: right;
-  flex-grow: 0.5;
-}
-
-.contact-section-content {
-  display: flex;
-  flex-direction: row;
-  padding: 5px;
-  flex-grow: 10;
-}
 
 .contact-section-content-logo {
   flex-grow: 1;
@@ -242,53 +201,35 @@ footer {
     height: 70px;
   }
 
-  /* responsive code for the main content about me*/
+  /* responsive code for each main content section*/
 
-  .about-section {
+  .about-section, 
+  .experience-section,
+  .completed-projects-section,
+  .contact-section {
     display: flex;
     flex-direction: column;
   }
 
-  .about-section-title > h1 {
+  /* responsive code for each main content title */
+  .about-section-title > h1, 
+  .experience-section-title > h2,
+  .completed-projects-section-title > h3,
+  .contact-section-title > h4 {
     text-align: center;
   }
 
-  /* responsive code for the main content experience section*/
-
-  .experience-section {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .experience-section-title > h2 {
-    text-align: center;
-  }
-
-  /* code that affects the main content completed projects content section*/
-
-  .completed-projects-section {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .completed-projects-section-title > h3 {
-    text-align: center;
-  }
 
   .completed-projects-section-content > ul {
     padding: 5px;
   }
 
   .completed-projects-section-content > ul > li {
-    height: 80vh;
+    height: 35vh;
   }
 
   /* code that affects the main content contact section*/
 
-  .contact-section {
-    display: flex;
-    flex-direction: column;
-  }
 
   .contact-section-content {
     display: flex;
@@ -297,7 +238,5 @@ footer {
     align-items: center;
   }
 
-  .contact-section-title > h4 {
-    text-align: center;
-  }
+
 }
