@@ -196,9 +196,13 @@ footer {
     margin: 10px;
   }
 
+  .nav-link-item > a {
+    padding: 2px;
+  }
+
   .profile-img {
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
   }
 
   /* responsive code for each main content section*/
@@ -228,8 +232,7 @@ footer {
     height: 35vh;
   }
 
-  /* code that affects the main content contact section*/
-
+  /* code that affects the content of the contact section*/
 
   .contact-section-content {
     display: flex;
