@@ -1,329 +1,303 @@
 body {
-    margin: 0px;
-    background-color: #081c15;
-    font-family: "Dancing Script", cursive;
-    font-family: "Josefin Sans", sans-serif;
-    font-family: "Lato", sans-serif;
-    font-family: "Poppins", sans-serif;
-    font-family: "Roboto", sans-serif;
-    font-family: "Roboto Condensed", sans-serif;
-    font-family: "Smokum", cursive;
-    font-family: "Source Sans Pro", sans-serif;
+  margin: 0px;
+  background-color: #081c15;
+  font-family: "Dancing Script", cursive;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Smokum", cursive;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 /*style for the navigation bar*/
-.navigation-bar{
-    display: flex;
-    flex-direction: row;
-    background-color: #004b23;
+.navigation-bar {
+  display: flex;
+  flex-direction: row;
+  background-color: #004b23;
 }
 
 /*style for the navigation bar profile */
-.navigation-bar-profile{
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    border-right: solid 3px #38b000;
-
+.navigation-bar-profile {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  border-right: solid 3px #38b000;
 }
 
 /*style for the navigation bar profile img*/
-.navigation-bar-profile-img{
-    display: flex;
-    justify-content: center;
-    margin: 10px;
+.navigation-bar-profile-img {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
 }
 .profile-img {
-    width: 100px;
-    height: 100px;
-    
+  width: 100px;
+  height: 100px;
 }
-
 
 /*style for the navigation bar profile name*/
-.navigation-bar-profile-name{
-    display: flex;
-    align-self: center;
-    align-items: center;
-    margin: 10px;
-    height: 30px;
-    margin-top: 1px;
-    margin-bottom: 1px;
+.navigation-bar-profile-name {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  margin: 10px;
+  height: 30px;
+  margin-top: 1px;
+  margin-bottom: 1px;
 }
 .profile-name {
-    color: #70e000;
-    margin-top: 1px;
-    margin-bottom: 1px;
-    text-shadow:
-      0 0 21px rgb(248, 239, 239),
-      0 0 42px rgb(138, 247, 210),
-      0 0 82px rgb(32, 240, 171),
-      0 0 92px rgb(25, 199, 141),
-      0 0 102px rgb(18, 168, 118),
-      0 0 151px rgb(13, 112, 79);
-  
+  color: #70e000;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  text-shadow: 0 0 21px rgb(248, 239, 239), 0 0 42px rgb(138, 247, 210),
+    0 0 82px rgb(32, 240, 171), 0 0 92px rgb(25, 199, 141),
+    0 0 102px rgb(18, 168, 118), 0 0 151px rgb(13, 112, 79);
 }
 
-
 /*style for the navigation bar link elements*/
-.navigation-bar-links{
-    flex-grow: 3;
-    display: flex;
-    flex-direction: row;
+.navigation-bar-links {
+  flex-grow: 3;
+  display: flex;
+  flex-direction: row;
 }
 
 .nav-link-item {
-    display: flex;
-    flex-direction: row;
-    flex-grow: 3;
-    justify-content: center;
-    align-items: center;
-    
+  display: flex;
+  flex-direction: row;
+  flex-grow: 3;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-link-item > a {
-    color: #70e000;
-    text-decoration: none;
-    text-shadow: 2px 2px 2px #007200;
+  color: #70e000;
+  text-decoration: none;
+  text-shadow: 2px 2px 2px #007200;
 }
 
-.nav-link-item > a:hover{
-    color: #ccff33;
+.nav-link-item > a:hover {
+  color: #ccff33;
 }
 
 /* code that affects the main content section*/
 .main-content {
-    display: flex;
-    flex-direction: column;
-    
+  display: flex;
+  flex-direction: column;
 }
 
 /* code that affects section title size*/
-h1, h2, h3, h4 {
-    font-size: 20px;
+h1,
+h2,
+h3,
+h4 {
+  font-size: 20px;
+  /* ALEX: Set margin here to so that all headers do not overflow within their boxes */
+  margin: 0;
 }
 
 /* code that affects the main content about section*/
 .about-section {
-    display: flex;
-    flex-direction: row; 
+  display: flex;
+  flex-direction: row;
 }
 
-.about-section-title{
-    
-    color: #70e000;
-    text-align: right;
-    
+.about-section-title {
+  /* ALEX: this will take some of the remaining space */
+  flex: 1;
+  color: #70e000;
+  text-align: right;
+  /* ALEX: Added a padding here consistent with the content */
+  padding: 10px;
 }
 
-.about-section-content{
-    
-    flex-wrap: wrap;
-    color: #70e000;
-    padding: 5px;
-    flex-grow: 3;
-    
+.about-section-content {
+  /* ALEX: this will take 5 times the remaining space */
+  flex: 5;
+  flex-wrap: wrap;
+  color: #70e000;
+  padding: 10px;
 }
 
 /* code that affects the main content work experience section*/
 
 .experience-section {
-    display: flex;
-    flex-direction: row; 
+  display: flex;
+  flex-direction: row;
 }
 
 .experience-section-title {
-    
-    color: #70e000;
-    text-align: right;
+  /* ALEX: this will take some of the remaining space */
+  flex: 1;
+  color: #70e000;
+  /* ALEX: Added a padding here consistent with the content */
+  text-align: right;
+  padding: 10px;
 }
 
 .experience-section-content {
-    
-    flex-wrap: wrap;
-    color: #70e000;
-    padding: 5px;
+  /* ALEX: this will take 5 times the remaining space */
+  flex: 5;
+  flex-wrap: wrap;
+  color: #70e000;
+  padding: 10px;
 }
 
 /* code that affects the main content completed projects section*/
 
 .completed-projects-section {
-    display: flex;
-    flex-direction: row; 
+  display: flex;
+  flex-direction: row;
 }
 
 .completed-projects-section-title {
-    
-    color: #70e000;
-    text-align: right;
-    flex-grow:  0.5;
+  color: #70e000;
+  text-align: right;
+  flex-grow: 0.5;
 }
 
 .completed-projects-section-content {
-    width: 80%;
-
+  width: 80%;
 }
 .completed-projects-section-content > ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style-type: none;
-    padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 5px;
 }
 
 .completed-projects-section-content > ul > li {
-    height: 20vh;
-    
-    flex-grow: 1;
+  height: 20vh;
+
+  flex-grow: 1;
 }
 
 .completed-projects-section-content-img {
-    max-height: 100%;
-    min-width: 100%;
-    object-fit: cover;
-    vertical-align: bottom;
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
 }
 
 .completed-projects-section-content > ul > li:last-child {
-    flex-grow: 10;
+  flex-grow: 10;
 }
 
 /* code that affects the main content contact section*/
 
-
 .contact-section {
-    display: flex;
-    flex-direction: row; 
+  display: flex;
+  flex-direction: row;
 }
 
-.contact-section-title{
-
-   padding: 5px;
-   text-align: right;
-   flex-grow: 0.5;
+.contact-section-title {
+  padding: 5px;
+  text-align: right;
+  flex-grow: 0.5;
 }
 
 .contact-section-content {
-    display: flex;
-    flex-direction: row; 
-    padding: 5px;
-    flex-grow: 10;
-
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  flex-grow: 10;
 }
-
 
 .contact-section-content-logo {
-    flex-grow: 1;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    
+  flex-grow: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-
-
 
 /* code that affects the main content footer section*/
 
 footer {
-    color: #006400;
-    text-align: center;
+  color: #006400;
+  text-align: center;
 }
-
-
-
-
 
 /* mobile viewport styles */
 @media screen and (max-width: 900px) {
-
-    /* responsive code for the nav bar*/
-    .navigation-bar {
-      flex-direction: column;
-      align-items: center;
-    }
-    
-    .navigation-bar-profile{
-        border-bottom: solid 3px #38b000;
-        border-right: 0px;
-    }
-    .navigation-bar-links {
-      flex-direction: column;
-      align-items: center;
-      margin: 10px;
-    }
-
-    .profile-img {
-        width: 70px;
-        height: 70px;
-        
-    }
-
-    /* responsive code for the main content about me*/
-
-    .about-section {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .about-section-title > h1 {
-        text-align: center;
-        
-    }
-
-    /* responsive code for the main content experience section*/
-
-    .experience-section {
-        display: flex;
-        flex-direction: column; 
-    }
-
-    .experience-section-title > h2 {
-        text-align: center;
-    }
-
-    /* code that affects the main content completed projects content section*/
-    
-    .completed-projects-section {
-        display: flex;
-        flex-direction: column; 
-    }
-
-    .completed-projects-section-title > h3 {
-        text-align: center;
-    }
-    
-    .completed-projects-section-content > ul {
-        padding: 5px;
-    }
-
-    .completed-projects-section-content > ul > li {
-        height: 80vh;
-      }
-    
-
-
-
-      /* code that affects the main content contact section*/
-
-    .contact-section {
-        display: flex;
-        flex-direction: column; 
-    }
-
-    .contact-section-content {
-        display: flex;
-        flex-direction: row; 
-        padding: 5px;
-        align-items: center;
-        
-    }
-
-    .contact-section-title > h4 {
-        text-align: center;
-        
-    }
- 
-    
+  /* responsive code for the nav bar*/
+  .navigation-bar {
+    flex-direction: column;
+    align-items: center;
   }
+
+  .navigation-bar-profile {
+    border-bottom: solid 3px #38b000;
+    border-right: 0px;
+  }
+  .navigation-bar-links {
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+
+  .profile-img {
+    width: 70px;
+    height: 70px;
+  }
+
+  /* responsive code for the main content about me*/
+
+  .about-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-section-title > h1 {
+    text-align: center;
+  }
+
+  /* responsive code for the main content experience section*/
+
+  .experience-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .experience-section-title > h2 {
+    text-align: center;
+  }
+
+  /* code that affects the main content completed projects content section*/
+
+  .completed-projects-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .completed-projects-section-title > h3 {
+    text-align: center;
+  }
+
+  .completed-projects-section-content > ul {
+    padding: 5px;
+  }
+
+  .completed-projects-section-content > ul > li {
+    height: 80vh;
+  }
+
+  /* code that affects the main content contact section*/
+
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-section-content {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    align-items: center;
+  }
+
+  .contact-section-title > h4 {
+    text-align: center;
+  }
+}
