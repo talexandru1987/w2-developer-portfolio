@@ -118,8 +118,8 @@ h4 {
 }
 
 /* code toa adjust the right border of the completed project section title*/
-.completed-projects-section-title {
-  padding: 8px;
+.completed-projects-section-content {
+  padding: 10px;
 }
 
 /* code that affects content section for about me, experience and contact*/
@@ -138,22 +138,33 @@ h4 {
   flex-direction: row;
 }
 
-/* code that affects the main content of completed projects section*/
+/* code that affects the main content of the experience and completed projects section*/
 
-.completed-projects-section-content {
+.completed-projects-section-content, 
+.experience-section-content {
   flex: 5;
 }
-.completed-projects-section-content > ul {
+.completed-projects-section-content > ul, 
+.experience-section-content > ul {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
   padding: 5px;
 }
 
-.completed-projects-section-content > ul > li {
+.completed-projects-section-content > ul > li, 
+.experience-section-content > ul > li {
   height: 20vh;
   flex-grow: 1;
   border: solid 1px #9ef01a;
+}
+
+.experience-section-content > ul > li{
+  height: 3vh;
+}
+
+.experience-section-content-text{
+  margin: 2px;
 }
 
 .completed-projects-section-content-img {
@@ -165,8 +176,10 @@ h4 {
 }
 
 
-.completed-projects-section-content > ul > li:last-child {
+.completed-projects-section-content > ul > li:last-child, 
+.experience-section-content > ul > li:last-child {
   flex-grow: 10;
+  text-align: center;
 }
 
 .completed-projects-section-content-img:hover {
