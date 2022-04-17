@@ -161,10 +161,22 @@ h4 {
   min-width: 100%;
   object-fit: cover;
   vertical-align: bottom;
+  
 }
+
 
 .completed-projects-section-content > ul > li:last-child {
   flex-grow: 10;
+}
+
+.completed-projects-section-content-img:hover {
+  position:relative;
+  top:-25px;
+  left:-35px;
+  width:500px;
+  height:auto;
+  display:block;
+  z-index:999;
 }
 
 /* code that affects the logo ims for the contact section*/
@@ -182,7 +194,7 @@ h4 {
   max-width: 700px; 
 }
 
-.hoverwrap img { width: 100%; }
+.hoverwrap > img { width: 100%; }
 
 
 .hovercap {
