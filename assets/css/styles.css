@@ -114,6 +114,12 @@ h4 {
   color: #70e000;
   text-align: right;
   padding: 10px;
+  border-right: solid 3px #38b000;
+}
+
+/* code toa adjust the right border of the completed project section title*/
+.completed-projects-section-title {
+  padding: 8px;
 }
 
 /* code that affects content section for about me, experience and contact*/
@@ -161,7 +167,7 @@ h4 {
   flex-grow: 10;
 }
 
-/* code that affects the main content contact section*/
+/* code that affects the logo ims for the contact section*/
 
 .contact-section-content-logo {
   flex-grow: 1;
@@ -171,12 +177,42 @@ h4 {
   align-items: center;
 }
 
+.hoverwrap {
+  position: relative; 
+  max-width: 700px; 
+}
+
+.hoverwrap img { width: 100%; }
+
+
+.hovercap {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  position: absolute;
+  bottom: 0; left: 0;
+  background-color: rgba(1, 19, 5, 0.712);
+  color: #70e000;
+}
+
+.hovercap {
+  visibility: none; opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.hoverwrap:hover .hovercap {
+  visibility: visible; opacity: 1;
+}
+
+
 /* code that affects the main content footer section*/
 
 footer {
   color: #006400;
   text-align: center;
 }
+
+
 
 /* mobile viewport styles */
 @media screen and (max-width: 900px) {
