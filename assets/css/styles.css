@@ -172,9 +172,14 @@ h4 {
   min-width: 100%;
   object-fit: cover;
   vertical-align: bottom;
+  object-fit:fill;
   
 }
 
+.completed-projects-section-content > ul > li:first-child{
+  width: 100%;
+  height: 25vh; 
+}
 
 .completed-projects-section-content > ul > li:last-child, 
 .experience-section-content > ul > li:last-child {
