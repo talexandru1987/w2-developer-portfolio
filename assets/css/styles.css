@@ -287,8 +287,17 @@ footer {
     padding: 5px;
   }
 
-  .completed-projects-section-content > ul > li {
+  
+  .completed-projects-section-content-img{
+    width: 25vh;
     height: 35vh;
+  }
+
+  .about-section-title, 
+  .experience-section-title, 
+  .completed-projects-section-title, 
+  .contact-section-title {
+   border-bottom: solid 3px #38b000;
   }
 
   /* code that affects the content of the contact section*/
