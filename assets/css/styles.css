@@ -1,0 +1,313 @@
+body {
+  margin: 0px;
+  background-color: #081c15;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/*style for the navigation bar*/
+.navigation-bar {
+  display: flex;
+  flex-direction: row;
+  background-color: #004b23;
+}
+
+/*style for the navigation bar profile */
+.navigation-bar-profile {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  border-right: solid 3px #38b000;
+}
+
+/*style for the navigation bar profile img*/
+.navigation-bar-profile-img {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.profile-img {
+  width: 100px;
+  height: 100px;
+}
+
+/*style for the navigation bar profile name*/
+.navigation-bar-profile-name {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  margin: 10px;
+  height: 30px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+.profile-name {
+  color: #70e000;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  text-shadow: 0 0 21px rgb(248, 239, 239), 0 0 42px rgb(138, 247, 210),
+    0 0 82px rgb(32, 240, 171), 0 0 92px rgb(25, 199, 141),
+    0 0 102px rgb(18, 168, 118), 0 0 151px rgb(13, 112, 79);
+}
+
+/*style for the navigation bar link elements*/
+.navigation-bar-links {
+  flex-grow: 3;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-link-item {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 3;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-link-item > a {
+  color: #70e000;
+  text-decoration: none;
+  text-shadow: 2px 2px 2px #007200;
+}
+
+.nav-link-item > a:hover {
+  color: #ccff33;
+}
+
+/* code that affects the main content section*/
+.main-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* code that affects section title size*/
+h1,
+h2,
+h3,
+h4 {
+  font-size: 20px;
+  margin: 5px;
+}
+
+/* code that affects the main content and each section of the main content*/
+ .about-section, 
+ .experience-section, 
+ .completed-projects-section, 
+ .contact-section {
+  display: flex;
+  flex-direction: row;
+}
+
+/* code that affects each title section of the main content*/
+.about-section-title, 
+.experience-section-title, 
+.completed-projects-section-title, 
+.contact-section-title {
+  flex: 1;
+  color: #70e000;
+  text-align: right;
+  padding: 10px;
+  border-right: solid 3px #38b000;
+}
+
+/* code toa adjust the right border of the completed project section title*/
+.completed-projects-section-content {
+  padding: 10px;
+}
+
+/* code that affects content section for about me, experience and contact*/
+.about-section-content, 
+.experience-section-content, 
+.contact-section-content {
+  flex: 5;
+  flex-wrap: wrap;
+  color: #70e000;
+  padding: 10px;
+}
+
+/* code that affects only the content of the contact section*/
+.contact-section-content{
+  display: flex;
+  flex-direction: row;
+}
+
+/* code that affects the main content of the experience and completed projects section*/
+
+.completed-projects-section-content, 
+.experience-section-content {
+  flex: 5;
+}
+.completed-projects-section-content > ul, 
+.experience-section-content > ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 5px;
+}
+
+.completed-projects-section-content > ul > li, 
+.experience-section-content > ul > li {
+  height: 20vh;
+  flex-grow: 1;
+  border: solid 1px #9ef01a;
+}
+
+.experience-section-content > ul > li{
+  height: 3vh;
+}
+
+.experience-section-content-text{
+  margin: 2px;
+}
+
+.completed-projects-section-content-img {
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+  object-fit:fill;
+  
+}
+
+.completed-projects-section-content > ul > li:first-child{
+  width: 100%;
+  height: 25vh; 
+}
+
+.completed-projects-section-content > ul > li:last-child, 
+.experience-section-content > ul > li:last-child {
+  flex-grow: 10;
+  text-align: center;
+}
+
+.completed-projects-section-content-img:hover {
+  position:relative;
+  top:-25px;
+  left:-35px;
+  width:500px;
+  height:auto;
+  display:block;
+  z-index:999;
+}
+
+/* code that affects the logo ims for the contact section*/
+
+.contact-section-content-logo {
+  flex-grow: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hoverwrap {
+  position: relative; 
+  max-width: 700px; 
+}
+
+.hoverwrap > img { width: 100%; }
+
+
+.hovercap {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  position: absolute;
+  bottom: 0; left: 0;
+  background-color: rgba(1, 19, 5, 0.712);
+  color: #70e000;
+}
+
+.hovercap {
+  visibility: none; opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.hoverwrap:hover .hovercap {
+  visibility: visible; opacity: 1;
+}
+
+
+/* code that affects the main content footer section*/
+
+footer {
+  color: #006400;
+  text-align: center;
+}
+
+
+
+/* mobile viewport styles */
+@media screen and (max-width: 900px) {
+  /* responsive code for the nav bar*/
+  .navigation-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navigation-bar-profile {
+    border-bottom: solid 3px #38b000;
+    border-right: 0px;
+  }
+  .navigation-bar-links {
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+
+  .nav-link-item > a {
+    padding: 2px;
+  }
+
+  .profile-img {
+    width: 90px;
+    height: 90px;
+  }
+
+  /* responsive code for each main content section*/
+
+  .about-section, 
+  .experience-section,
+  .completed-projects-section,
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* responsive code for each main content title */
+  .about-section-title > h1, 
+  .experience-section-title > h2,
+  .completed-projects-section-title > h3,
+  .contact-section-title > h4 {
+    text-align: center;
+  }
+
+
+  .completed-projects-section-content > ul {
+    padding: 5px;
+  }
+
+  
+  .completed-projects-section-content-img{
+    width: 25vh;
+    height: 35vh;
+  }
+
+  .about-section-title, 
+  .experience-section-title, 
+  .completed-projects-section-title, 
+  .contact-section-title {
+   border-bottom: solid 3px #38b000;
+  }
+
+  /* code that affects the content of the contact section*/
+
+  .contact-section-content {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    align-items: center;
+  }
+
+
+}
